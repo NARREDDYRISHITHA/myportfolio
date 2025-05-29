@@ -151,7 +151,7 @@ function Home() {
         transition={{ delay: 0.6, duration: 0.5 }}
       >
         <SocialIcon
-          href="https://github.com/yourusername"
+          href="https://github.com/NARREDDYRISHITHA"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.1 }}
@@ -160,7 +160,7 @@ function Home() {
           <i className="fab fa-github"></i>
         </SocialIcon>
         <SocialIcon
-          href="https://linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/rishitha-narreddy-9886a4268/"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.1 }}
