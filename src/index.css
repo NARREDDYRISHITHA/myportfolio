@@ -1,0 +1,397 @@
+/* index.css */
+
+/* Global Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  --text-color: #212529;
+  --heading-color: #2d3436;
+  --link-color: #0056b3;
+  --success-color: #28a745;
+  --error-color: #dc3545;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.3s;
+}
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color var(--transition-speed) ease;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+  border: none;
+  outline: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--link-color);
+  transform: translateY(-2px);
+}
+
+/* Card Styles */
+.card {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform var(--transition-speed) ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mt-3 {
+  margin-top: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.p-1 {
+  padding: 0.5rem;
+}
+
+.p-2 {
+  padding: 1rem;
+}
+
+.p-3 {
+  padding: 1.5rem;
+}
+
+.p-4 {
+  padding: 2rem;
+}
+
+/* Flex Utilities */
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* Grid System */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 768px) {
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CSS for the image inside the circle */
+.photo {
+  width: 150px;
+  /* Adjust the width as per your requirement */
+  height: 150px;
+  /* Adjust the height to match the width for a circle */
+  border-radius: 50%;
+  /* This will make the image circular */
+  object-fit: cover;
+  /* Ensures the image fits inside the circle without stretching */
+  object-position: center 10%;
+  /* Moves the image down slightly within the circle */
+  border: 2px solid #fff;
+  /* Optional: Adds a white border around the image */
+  display: block;
+  margin: 0 auto 0;
+  /* Moves the image down from the top */
+}
+
+/* Common content wrapper for sections */
+.content {
+  padding: 20px 30px;
+  /* Adds space to left and right */
+}
+
+/* Optional: Section spacing */
+section {
+  margin-top: 30px;
+}
+
+.section-content {
+  padding: 0;
+  /* Adjust padding as needed */
+  max-width: 1000px;
+  margin: 20px auto;
+  padding-left: 0px;
+}
+
+/* Style for the education section */
+.education-section {
+  padding: 20px;
+}
+
+/* Style for the card container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Style for individual cards */
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin: 10px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-institution,
+.card-period,
+.card-result {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.card-institution {
+  font-style: italic;
+  color: #555;
+}
+
+.tech-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+  padding: 1.5rem;
+}
+
+.tech-card-logo img {
+  width: 100px;
+  height: auto;
+  margin-right: 1.5rem;
+  object-fit: contain;
+}
+
+.tech-card-content {
+  flex: 1;
+}
+
+.tech-card-content h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #1f2937;
+}
+
+.tech-card-content em {
+  color: #374151;
+}
+
+.tech-card-period {
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.tech-card-content ul {
+  padding-left: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.card {
+  flex-direction: row;
+}
+
+.card img {
+  width: 30%;
+}
+
+.card {
+  align-items: center;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card img {
+  border-top-right-radius: 0;
+  border-bottom-left-radius: calc(0.25rem - 1px);
+}
