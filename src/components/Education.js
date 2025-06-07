@@ -230,7 +230,7 @@ function Education() {
           title="Bachelor of Technology in Computer Science and Engineering"
           institution="Kalasalingam Academy of Research and Education, Virudhunagar, T.N."
           period="2022-Present"
-          cgpaOrPercentage="CGPA: 9.21/10.0"
+          cgpaOrPercentage="CGPA: 9.10/10.0"
           logo="/images/klu logo.png"
         />
         <EducationCard
