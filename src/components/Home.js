@@ -133,7 +133,7 @@ function Home() {
       </Description>
 
       <ResumeButton
-        href="https://drive.google.com/file/d/17GvPpdH6F8z3F9T1Y-k_P5EDr3yrGZ1y/view?usp=drive_link"
+        href="https://drive.google.com/file/d/1Qc_O64Fq_7h_mLePc5VJsn6eAQDNqK-m/view?usp=drive_link"
         target="_blank"
         rel="noopener noreferrer"
         initial={{ y: 20, opacity: 0 }}
