@@ -18,7 +18,8 @@ import { BiBrain } from 'react-icons/bi';
 import {
   SiCplusplus,
   SiC,
-  SiGooglecloud
+  SiGooglecloud,
+  SiOpenai
 } from 'react-icons/si';
 import { GiArtificialIntelligence, GiProcessor, GiArtificialHive } from 'react-icons/gi';
 import { VscCode } from 'react-icons/vsc';
@@ -102,8 +103,8 @@ function Skills() {
 
   const aiAndMl = [
     { name: 'Machine Learning', icon: <BiBrain /> },
-    { name: 'Natural Language Processing', icon: <GiArtificialIntelligence /> }
-    { name: 'Generative AI', icon: <<SiOpenai /> }
+    { name: 'Natural Language Processing', icon: <GiArtificialIntelligence /> },
+    { name: 'Generative AI', icon: <SiOpenai /> }
   ];
 
   const coreCs = [
