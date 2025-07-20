@@ -96,7 +96,6 @@ const SkillItem = styled(motion.div)`
 function Skills() {
   const programmingLanguages = [
     { name: 'Python', icon: <DiPython /> },
-    { name: 'C', icon: <SiC /> },
     { name: 'C++', icon: <SiCplusplus /> },
     { name: 'SQL', icon: <FaDatabase /> }
   ];
@@ -104,13 +103,12 @@ function Skills() {
   const aiAndMl = [
     { name: 'Machine Learning', icon: <BiBrain /> },
     { name: 'Natural Language Processing', icon: <GiArtificialIntelligence /> }
+    { name: 'Generative AI', icon: <<SiOpenai /> }
   ];
 
   const coreCs = [
     { name: 'Data Structures & Algorithms', icon: <FaCode /> },
     { name: 'Operating Systems', icon: <DiLinux /> },
-    { name: 'Memory Management', icon: <GiProcessor /> },
-    { name: 'OOP', icon: <VscCode /> },
     { name: 'SDLC', icon: <DiTerminal /> }
   ];
 
@@ -125,9 +123,7 @@ function Skills() {
   const toolsAndPlatforms = [
     { name: 'Git', icon: <DiGit /> },
     { name: 'GitHub', icon: <DiGithubBadge /> },
-    { name: 'VS Code', icon: <DiVisualstudio /> },
-    { name: 'Google Vision API', icon: <SiGooglecloud /> },
-    { name: 'YOLO', icon: <GiArtificialHive /> }
+    { name: 'VS Code', icon: <DiVisualstudio /> }
   ];
 
   return (
