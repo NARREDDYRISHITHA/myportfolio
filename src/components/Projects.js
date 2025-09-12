@@ -221,6 +221,17 @@ function Projects() {
         />
 
         <ProjectCard
+          title="GitHub User Search (React App)"
+          points={[
+            "Developed a responsive web app to search GitHub users and display detailed profiles using the GitHub REST API.",
+            "Implemented username-based search with profile details including avatar, followers, and bio.",
+            "Displayed top 5 repositories sorted by stars for quick insights.",
+            "Added dark mode toggle, loading states, and error handling for a smooth user experience."
+          ]}
+          technologies="React, Vite, Tailwind CSS, GitHub REST API"
+        />
+
+        <ProjectCard
           title="Gesture-Based Computer Control System"
           points={[
             "Developed a Human-Computer Interaction (HCI) system using hand gestures and voice commands.",
@@ -251,3 +262,4 @@ function Projects() {
 }
 
 export default Projects;
+
