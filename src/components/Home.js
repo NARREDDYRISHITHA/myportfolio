@@ -132,18 +132,7 @@ function Home() {
         in a dynamic, collaborative environment to drive meaningful impact.
       </Description>
 
-      <ResumeButton
-        href="https://drive.google.com/file/d/1WbReRqPY_Jpy2f9JHEVTaCwZfOGE-uJV/view?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
-        initial={{ y: 20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.5, duration: 0.5 }}
-        whileHover={{ scale: 1.05 }}
-      >
-        <i className="fas fa-download" style={{ marginRight: '8px' }}></i>
-        Download Resume
-      </ResumeButton>
+      
 
       <SocialLinks
         initial={{ y: 20, opacity: 0 }}
@@ -174,3 +163,4 @@ function Home() {
 }
 
 export default Home;
+
