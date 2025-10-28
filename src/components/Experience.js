@@ -277,7 +277,7 @@ function Experience() {
       <NonTechnicalExperienceCard
         role="Co-Secretary"
         organization="KARE Open Source Society (KARE - OSS)"
-        period="July 2024 – Present"
+        period="July 2024 – July 2025"
         description={[
           "Organized events and fostered collaboration within the open-source community.",
         ]}
@@ -288,6 +288,7 @@ function Experience() {
 }
 
 export default Experience;
+
 
 
 
