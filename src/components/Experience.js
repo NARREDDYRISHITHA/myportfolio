@@ -260,7 +260,6 @@ function Experience() {
         responsibilities={[
           "Undergoing intensive training in Java Full Stack Development, covering front-end, back-end, and database technologies.",
           "Developing mini-projects using Spring Boot, React, and RESTful APIs.",
-          "Collaborating with peers to build scalable and efficient full-stack applications.",
         ]}
       />
 
@@ -289,4 +288,5 @@ function Experience() {
 }
 
 export default Experience;
+
 
