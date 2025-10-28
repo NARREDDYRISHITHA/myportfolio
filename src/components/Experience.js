@@ -251,6 +251,18 @@ function Experience() {
           "Applied data augmentation techniques to handle class imbalance and boost model generalization.",
         ]}
       />
+          
+      <TechnicalExperienceCard
+        company="Wipro"
+        role="Java Full Stack Trainee"
+        period="September 2025 – November 2025"
+        logo="/images/wipro-logo.png"
+        responsibilities={[
+          "Undergoing intensive training in Java Full Stack Development, covering front-end, back-end, and database technologies.",
+          "Developing mini-projects using Spring Boot, React, and RESTful APIs.",
+          "Collaborating with peers to build scalable and efficient full-stack applications.",
+        ]}
+      />
 
       <NonTechnicalExperienceCard
         role="Co-Lead"
@@ -277,3 +289,4 @@ function Experience() {
 }
 
 export default Experience;
+
