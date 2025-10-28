@@ -256,7 +256,7 @@ function Experience() {
         company="Wipro"
         role="Java Full Stack Trainee"
         period="September 2025 – November 2025"
-        logo="/images/wipro-logo.png"
+        logo="/images/wipro logo.png"
         responsibilities={[
           "Undergoing intensive training in Java Full Stack Development, covering front-end, back-end, and database technologies.",
           "Developing mini-projects using Spring Boot, React, and RESTful APIs.",
@@ -288,5 +288,6 @@ function Experience() {
 }
 
 export default Experience;
+
 
 
