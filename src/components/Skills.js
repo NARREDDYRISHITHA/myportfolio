@@ -97,7 +97,6 @@ const SkillItem = styled(motion.div)`
 function Skills() {
   const programmingLanguages = [
     { name: 'Python', icon: <DiPython /> },
-    { name: 'C++', icon: <SiCplusplus /> },
     { name: 'SQL', icon: <FaDatabase /> }
   ];
 
@@ -108,7 +107,6 @@ function Skills() {
   ];
 
   const coreCs = [
-    { name: 'Data Structures & Algorithms', icon: <FaCode /> },
     { name: 'Operating Systems', icon: <DiLinux /> },
     { name: 'SDLC', icon: <DiTerminal /> }
   ];
@@ -117,8 +115,6 @@ function Skills() {
     { name: 'HTML', icon: <DiHtml5 /> },
     { name: 'CSS', icon: <DiCss3 /> },
     { name: 'JavaScript', icon: <DiJavascript1 /> },
-    { name: 'Node.js', icon: <DiNodejs /> },
-    { name: 'React', icon: <DiReact /> }
   ];
 
   const toolsAndPlatforms = [
@@ -218,3 +214,4 @@ function Skills() {
 }
 
 export default Skills; 
+
